@@ -1,0 +1,104 @@
+#form{
+    width: 500px;
+    height: 420px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 1em black;
+    opacity: 0.8;
+    padding: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+#name {
+    text-align: center;
+    font-size: 35px;
+    font-family: "Arial Bold", sans-serif;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0px;
+    padding: 10px;
+}
+
+#consultorio {
+    text-align: center;
+    font-size: 35px;
+    font-family: "Arial Bold", sans-serif;
+    border-radius: 15px 15px 15px 15px;
+    margin: 0px;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+#name {
+    padding: 10px;
+    width: 476px;
+    border: solid 2px;
+    border-color: #34437a;
+    outline: 0;
+}
+
+#consultorio {
+    padding: 10px;
+    width: 476px;
+    border: solid 2px;
+    border-color: #a8cf45;
+    outline: 0;
+}
+
+#nomeCampo {
+    color: #34437a;
+    font-size: 30px;
+    font-family: "Arial Bold", sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+#consultorioCampo {
+    color: #a8cf45;
+    font-size: 30px;
+    font-family: "Arial Bold", sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+#botao {
+    padding: 15px 32px;
+    border: 2px;
+    color: white;
+    text-align: center;
+    background-color: #34437a;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+body{
+    background-image: url(background_form.fw.png);
+}
+
+#clickMe {
+    padding: 15px 32px;
+    border: 2px;
+    color: white;
+    text-align: center;
+    background-color: #a8cf45;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 175px;
+}

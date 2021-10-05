@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styleIndex.css" type="text/css"></style>
+        <title>JVC</title>
+  
+    </head>
+
+    <body>
+
+        <div id="atual">
+            <h1 id="dadosAtuais">Atual</h1>
+            <p id="tagNome1">Nome:</p>
+            <h1 id="nome">Nome</h1>
+            <p id="tagConsultorio1">Consultório:</p>
+            <h2 id="consultorio">Consultório</h2>
+        </div>
+        <br>
+        <div id="dadosAnteriores">
+            <h1 id="anterior">Anterior</h1>
+            <p id="tagNome2">Nome:</p>
+            <h1 id="nomeAnterior">Nome anterior</h1>
+            <p id="tagConsultorio2">Consultório:</p>
+            <h2 id="consultorioAnterior">Consultório anterior</h2>
+        </div>
+
+        <audio src="chamada.wav" autoplay="true"></audio>
+
+        <script>
+
+            function reproduzir() {
+               const audio = document.querySelector('audio');
+               return audio.play();
+            };
+            
+            let registro = localStorage.getItem("storage");
+            var dados = JSON.parse(registro);
+            var dados2 = JSON.parse(dados[0]);
+            var dados3 = JSON.parse(dados[1]);
+
+            window.addEventListener("storage", function(){
+                    location.reload(true); 
+            });
+
+            document.getElementById("nome").innerHTML = dados2["name"];
+            document.getElementById("consultorio").innerHTML = dados2["consultorio"];
+
+            document.getElementById("nomeAnterior").innerHTML = dados3['name'];
+            document.getElementById("consultorioAnterior").innerHTML = dados3['consultorio'];
+
+        </script>
+    </body>
+
+</html>
