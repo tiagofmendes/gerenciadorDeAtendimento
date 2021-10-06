@@ -13,24 +13,29 @@
     </head>
 
     <body>
+            <header>
+                <div id="logoJvc" >
+                    <img id="imagemLogo"src="logoJvc.png"/>
+                </div>
+            </header>
 
-        <div id="atual">
-            <h1 id="dadosAtuais">Atual</h1>
-            <p id="tagNome1">Nome:</p>
-            <h1 id="nome">Nome</h1>
-            <p id="tagConsultorio1">Consultório:</p>
-            <h2 id="consultorio">Consultório</h2>
-        </div>
-        <br>
-        <div id="dadosAnteriores">
-            <h1 id="anterior">Anterior</h1>
-            <p id="tagNome2">Nome:</p>
-            <h1 id="nomeAnterior">Nome anterior</h1>
-            <p id="tagConsultorio2">Consultório:</p>
-            <h2 id="consultorioAnterior">Consultório anterior</h2>
-        </div>
+            <section id="atual">
+                <h1 id="dadosAtuais">Atual</h1>
+                <p id="tagNome1">Nome:</p>
+                <h1 id="nome">Nome</h1>
+                <p id="tagConsultorio1">Consultório:</p>
+                <h2 id="consultorio">Consultório</h2>
+            </section>
 
-        <audio src="chamada.wav" autoplay="true"></audio>
+            <section id="dadosAnteriores">
+                <h1 id="anterior">Anterior</h1>
+                <p id="tagNome2">Nome:</p>
+                <h1 id="nomeAnterior">Nome anterior</h1>
+                <p id="tagConsultorio2">Consultório:</p>
+                <h2 id="consultorioAnterior">Consultório anterior</h2>
+            </section>
+
+            <audio src="chamada.wav" autoplay="true"></audio>
 
         <script>
 
@@ -55,6 +60,13 @@
             document.getElementById("consultorioAnterior").innerHTML = dados3['consultorio'];
 
         </script>
+
+        <footer>
+            <div id="logoIntelly" >
+                <img id="imagemLogoIntelly"src="logoIntelly2.png"/>
+            </div>
+        </footer>
+
     </body>
 
 </html>
